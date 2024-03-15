@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Daniel Min Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Daniel Min" />
+    <meta name="description" content="Daniel Min Blog | Project" />
+    <meta property="og:title" content="Daniel Min Blog | Project" />
+    <meta property="og:description" content="This is Daniel Min's Blog" />
+    <meta property="og:image" content="../img/ProfileImage(3).jpg" />
+    <!-- Make sure to change this with my logo-->
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Daniel Min Blog | Project" />
+    <meta name="twitter:card" content="../img/ProfileImage(3).jpg" />
+    <meta name="twitter:image:alt" content="Profile Image" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="../img/ProfileImage(3).jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+
+  <body id="project-body">
+    <nav id="nav-bar">
+      <section id="nav-card">
+        <h1 id="name">Daniel Min</h1>
+        <img id="Profile-Picture" src="./img/ProfileImage(5).jpg" />
+        <section id="social-media">
+          <a href="https://github.com/yumin04" class="asset" target="_blank">
+            <img id="linkded-in" class="inner-asset" src="./img/linkedin.png" />
+          </a>
+          <a
+            href="https://www.instagram.com/rta.yunhong/"
+            target="_blank"
+            class="asset"
+          >
+            <img id="instagram" class="inner-asset" src="./img/instagram.png" />
+          </a>
+          <a href="https://github.com/yumin04" target="_blank" class="asset">
+            <img id="github" class="inner-asset" src="./img/github.png" />
+          </a>
+        </section>
+      </section>
+    </nav>
+    <main id="main">
+      <div class="medium-spacer"></div>
+      <section class="card">
+        <p class="profile-description">
+          I am a student at Chapman University pursuing a Bachelor of Science in
+          Software Engineering with dual minor in Secondary Education and Game
+          Development. Most of the time, I am a self-taught developer driven by
+          interest and motivation.
+        </p>
+        <div class="medium-spacer"></div>
+        <p class="profile-description">
+          As I started my post-secondary career as a education major, I have
+          lectured myself with a lot of education lectures with one computer
+          science course for my quantative inquiry general education. As soon as
+          I started the course, I have met my desired career. I loved all the
+          codes and loved my profession on coding.
+        </p>
+      </section>
+      <div class="medium-spacer"></div>
+
+      <section id="project-section">
+        <h1 id="project-start" class="title">Projects</h1>
+        <section class="project-item">
+          <video
+            class="project-media"
+            src="./img/TrashFlight.mp4"
+            controls
+            loop
+          ></video>
+          <section class="description-section">
+            <h1 class="project-item-title">Trash Flight</h1>
+            <p class="project-item-description">
+              This is the game that I made through Unity during winter. I strted
+              with no other background knowledge, but I watched a lot of videos
+              that would help my knowledge in C# and Unity.
+            </p>
+            <section class="skill-button-wrapper">
+              <h4 class="skill-button">Unity</h4>
+              <h4 class="skill-button">C#</h4>
+            </section>
+          </section>
+        </section>
+        <section class="project-item">
+          <img class="project-media java" src="./img/Java(1).png" />
+          <button class="material-symbols-outlined next-button">
+            chevron_right
+          </button>
+          <button class="material-symbols-outlined prev-button" disabled>
+            chevron_left
+          </button>
+
+          <section class="description-section">
+            <h1 class="project-item-title">Spoons</h1>
+            <p class="project-item-description">
+              In my Object Orientation Class, we developed a code for a card
+              game named Spoons. We started off with coding the individual Card
+              classes, then made a deck for the game, and finally finished with
+              the Spoons class for the game.
+            </p>
+            <section class="skill-button-wrapper">
+              <h4 class="skill-button">Java</h4>
+              <h4 class="skill-button">Docker</h4>
+            </section>
+          </section>
+        </section>
+        <section class="project-item">
+          <img class="project-media" src="./img/MST.png" />
+          <section class="description-section">
+            <h1 class="project-item-title">Minimum Spanning Tree</h1>
+            <p class="project-item-description">
+              During Data Structures, I developed a code for Minimum Spanning
+              Tree for my final project. Using the condition that the tree was
+              weighted, undirected graph, I was suppose to figure the minimum
+              spanning tree with no islands
+            </p>
+            <section class="skill-button-wrapper">
+              <h4 class="skill-button">C++</h4>
+              <h4 class="skill-button">Data Structures</h4>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <section id="experience-section">
+        <h1 id="experience-start" class="title">Experience</h1>
+        <h3>Student Grader</h3>
+        <p>I was a student grader for PHYS 101, Professor Cwik.</p>
+      </section>
+    </main>
+    <script>
+      const PHOTOS = ["./img/Java(1).png", "./img/Java(2).png"];
+      let index = 0;
+      document.querySelector(".next-button").addEventListener("click", () => {
+        index += 1;
+        document.querySelector(".prev-button").disabled = false;
+        if (index === PHOTOS.length - 1) {
+          // disable the button
+          document.querySelector(".next-button").disabled = true;
+        }
+        document.querySelector(".java").src = PHOTOS[index];
+      });
+
+      function goToPrev() {
+        index -= 1;
+        document.querySelector(".next-button").disabled = false;
+        if (index === 0) {
+          // disable the button
+          document.querySelector(".prev-button").disabled = true;
+        }
+        document.querySelector(".java").src = PHOTOS[index];
+      }
+      document
+        .querySelector(".prev-button")
+        .addEventListener("click", goToPrev);
+    </script>
+  </body>
+</html>
